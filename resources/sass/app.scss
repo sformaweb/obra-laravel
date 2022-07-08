@@ -1,0 +1,347 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+// @import 'variables';
+
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+// ----------------------------------FONTES DO ENCABEZADO E CONTIDOS-------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Montserrat&display=swap');
+
+// Opcións globais
+$enable-gradients: true;
+$enable-shadows: true;
+
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+
+// Customización
+// -------------------------PALETA DE CORES SASS----------------------------------------------
+$primary:#5694DB;
+$secondary:#f7d559;
+$body-color: #333;
+$body-bg: #fff;
+//$border-radius: .4rem;
+$success: #7952b3;
+$light: #5A7E99;
+// -------------------------FIN COLORES PALETA SASS----------------------------------------------
+$border-radius:0rem;
+
+
+// Requerido
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/containers";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/tables";
+@import "node_modules/bootstrap/scss/forms";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/dropdown";
+@import "node_modules/bootstrap/scss/button-group";
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/card";
+@import "node_modules/bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/accordion";
+@import "node_modules/bootstrap/scss/pagination";
+@import "node_modules/bootstrap/scss/badge";
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/progress";
+@import "node_modules/bootstrap/scss/list-group";
+@import "node_modules/bootstrap/scss/close";
+// @import "bootstrap/scss/toasts";
+@import "node_modules/bootstrap/scss/modal"; // Requires transitions
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+@import "node_modules/bootstrap/scss/carousel";
+// @import "bootstrap/scss/spinners";
+@import "node_modules/bootstrap/scss/offcanvas"; // Requires transitions
+@import "node_modules/bootstrap/scss/placeholders";
+// Helpers
+// @import "helpers";
+@import "node_modules/bootstrap/scss/helpers";
+
+// Utilities
+@import "node_modules/bootstrap/scss/utilities/api";
+
+
+//
+// Customización dos estilos
+//
+
+@import "node_modules/bootstrap-icons/font/bootstrap-icons";
+
+
+
+//  Estilo dos iconos de Bootstrap
+.bi {
+  fill: currentColor;
+}
+
+// --------------------------------FONTES XENÉRICAS----------------------------
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+// ----------------------------------FIN FONTES DO ENCABEZADO E CONTIDOS-------------------------------------
+
+// -----------------------------------FORMULARIO LOGIN----------------------------------------------------------
+.form-signin {
+  width: 100%;
+  max-width: 31.25rem;
+  height: 21.875rem;
+  padding: .9375rem;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.form-floating {
+  margin-top: 1.5625rem;
+  width: 21.875rem;
+}
+
+.checkbox-recordame {
+  font-weight: 300;
+  font-size: medium;
+  margin-top: 1.875rem;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: -0.0625rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#login-container {
+  background-color: #c1d8f0;
+  border-radius: .3125rem;
+  padding: 2.1875rem;
+}
+
+// ----------------------------------------FIN FORMULARIO LOGIN--------------------------------------------------
+
+
+// -----------------------------------------HEADER LOGIN---------------------------------------------------------
+
+.navbar {
+  height: 5rem;
+}
+
+// -----------------------------------------FIN HEADER LOGIN---------------------------------------------------------
+// -----------------------------------------MENÚ HAMBURGUESA--------------------------------------------------------
+.navbar-expand-lg {
+  height: 5%;
+  padding-bottom: 2%;
+  z-index: 5;
+}
+.container-fluid02 {
+  z-index: 5;
+  width: 100%;
+  padding: 1%;
+}
+// ICONO HAMBURGUESA
+.navbar-dark .navbar-toggler {
+  border: 0;
+  float: right;
+}
+// ----------------------------------------- PECHE MENÚ HAMBURGUESA--------------------------------------------------------
+
+
+// ----------------------------------------- NOSAS FICHAS TABS/COMÚN A PERSOAS E EMPRESAS---------------------------------
+
+/* CLASES DA ESTRUCTURA DAS FICHAS, DEBEN MANTERSE
+t-container = caja div -> ESTILO MODIFICABLE
+t-tabs y t-contents = lista ul -> COMPROBAR SE SE PODE
+t-tab y t-content = elementos li -> NECESARIOS PARA O JS */
+
+.t-container {
+  margin: .625rem auto;
+  padding: 0 2em;
+}
+
+.t-tab {
+  border-top-left-radius: .3125rem;
+  border-top-right-radius: .3125rem;
+}
+
+.t-tabs,
+.t-contents {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 2% 0 2%;
+  box-sizing: border-box;
+}
+
+.t-tabs li {
+  color: #fffefe;
+  padding: 0.5em 0.7em;
+  text-decoration: none;
+  float: left;
+  text-align: center;
+  font-size: 1.1em;
+
+  background: rgba(158, 157, 157, 0.933);
+  border-bottom: 0;
+  min-width: 2.5rem;
+  margin-right: .125rem;
+  margin-bottom: 0 !important;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.t-tabs li:hover {
+  background-color: $secondary;
+}
+
+.t-tabs li.selected {
+  cursor: default;
+  background: #585858;
+}
+
+.t-contents {
+  padding: 0 !important
+}
+
+.t-content {
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #c1d8f0;
+  box-sizing: border-box;
+  border-radius: .3125rem;
+  width: 100%;
+  line-height: 1.3em;
+  text-align: justify;
+  z-index: 1;
+  position: relative;
+  max-height: 0;
+  transition: max-height 0.5s ease 0s;
+  overflow: hidden;
+}
+
+.t-content.selected {
+  max-height: 187.5rem;
+  transition: max-height 1.25s ease 0.5s;
+}
+
+//
+// TABS CON BOOTSTRAP
+//
+
+.nav-tabs {
+  border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
+  background-color: #efefef;
+
+  .nav-link {
+    margin-bottom: -$nav-tabs-border-width;
+    background: none;
+    border: $nav-tabs-border-width solid transparent;
+    @include border-top-radius($nav-tabs-border-radius);
+
+    &:hover,
+    &:focus {
+      border-color: $nav-tabs-link-hover-border-color;
+      background-color: $secondary;
+      // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
+      isolation: isolate;
+    }
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    color: $nav-tabs-link-active-color;
+    background-color: rgba(86,148,219,0.6);
+    border-color: $nav-tabs-link-active-border-color;
+  }
+}
+
+.tab-content>.tab-pane.active{
+  background-color: rgba(86,148,219,0.3);
+}
+
+/* AÑADIDO POR VER */
+.t-content p {
+  margin-top: 1.5625rem;
+}
+
+#tabla {
+  border-bottom: black 1px solid;
+}
+
+input[placeholder] {
+  font-style: italic;
+}
+
+select[option] {
+  font-style: italic;
+}
+
+// ----------------------------------------- FIN FICHAS TABS/COMÚN A PERSOAS E EMPRESAS---------------------------------
+
+// ------------------------------------------ PAXINACIÓN DAS TÁBOAS PERSOAS EMPRESAS------------------------------------------
+.pagination {
+  list-style-type: none;
+  padding: .625rem 0;
+  display: inline-flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.pagination li {
+  box-sizing: border-box;
+  padding-right: .625rem;
+}
+
+.pagination li a {
+  box-sizing: border-box;
+  background-color: #e2e6e6;
+  padding: .5rem;
+  text-decoration: none;
+  font-size: .75rem;
+  font-weight: bold;
+  color: #616872;
+  border-radius: .25rem;
+}
+
+.pagination li a:hover {
+  background-color: #d4dada;
+}
+
+.pagination .next a,
+.pagination .prev a {
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+.pagination .currentpage a {
+  background-color: $primary;
+  color: #fff;
+}
+
+.pagination .currentpage a:hover {
+  background-color: rgb(78, 157, 248);
+}
+
+// ------------------------------------------ FIN PAXINACIÓN DAS TÁBOAS PERSOAS EMPRESAS------------------------------------------
