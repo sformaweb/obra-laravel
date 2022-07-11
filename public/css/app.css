@@ -130,7 +130,7 @@ body.dark td,hr{
     color: #e2e6e6 !important;
 }
 
-body.dark p{
+body.dark p, h2{
     color: #e2e6e6 !important;
 }
 
