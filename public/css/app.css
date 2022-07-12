@@ -75,7 +75,10 @@
     font-size: 1.2rem;
   }
 
-
+#aumentar, #disminuir{
+    border: solid 1px;
+    border-radius: 7%;
+}
 
 /* Botón modo oscuro */
 .switch{

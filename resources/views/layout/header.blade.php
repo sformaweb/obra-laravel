@@ -56,7 +56,7 @@
                 </ul>
 
                 {{-- Botón modo oscuro --}}
-                <button type="button" class="btn bg-white btn-outline-dark" id="aumentar">
+                <button type="button" class="btn bg-white" id="aumentar">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                         class="bi bi-fonts t" viewBox="0 0 16 16">
                         <path
@@ -65,7 +65,7 @@
                     </svg>
                 </button>
 
-                <button type="button" class="btn bg-white mx-2 btn-outline-dark " id="disminuir">
+                <button type="button" class="btn bg-white mx-2 " id="disminuir">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-fonts t" viewBox="0 0 16 16">
                         <path
