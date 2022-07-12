@@ -56,6 +56,20 @@
                 </ul>
 
                 {{-- Botón modo oscuro --}}
+                <button type="button" class="btn bg-white" id="aumentar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-fonts t" viewBox="0 0 16 16">
+      <path d="M12.258 3h-8.51l-.083 2.46h.479c.26-1.544.758-1.783 2.693-1.845l.424-.013v7.827c0 .663-.144.82-1.3.923v.52h4.082v-.52c-1.162-.103-1.306-.26-1.306-.923V3.602l.431.013c1.934.062 2.434.301 2.693 1.846h.479L12.258 3z"></path>
+    </svg>
+                  </button>
+
+                  <button type="button" class="btn bg-white mx-2" id="disminuir">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fonts t" viewBox="0 0 16 16">
+      <path d="M12.258 3h-8.51l-.083 2.46h.479c.26-1.544.758-1.783 2.693-1.845l.424-.013v7.827c0 .663-.144.82-1.3.923v.52h4.082v-.52c-1.162-.103-1.306-.26-1.306-.923V3.602l.431.013c1.934.062 2.434.301 2.693 1.846h.479L12.258 3z"></path>
+    </svg>
+                  </button>
+
+
+
 
                 <button class="switch" id="switch">
                     <span><i class="material-icons luna ">brightness_2</i>
@@ -67,7 +81,7 @@
 
 
                 {{-- CAMPO DE BÚSQUEDA - COMPROBAR FUNCIONALIDAD --}}
-                <form action="#" method="POST">
+                {{-- <form action="#" method="POST">
                     <div class="input-group">
                         <input class="form-control border rounded-start" type="text" placeholder="..."
                             id="example-search-input" alt="Barra de búsqueda">
@@ -81,7 +95,7 @@
                             </button>
                         </span>
                     </div>
-                </form>
+                </form> --}}
                 {{-- lo más probable es que no funcione, hay que crear una función específica
                 en el HomeController pero no sé con qué parámetros --}}
 
