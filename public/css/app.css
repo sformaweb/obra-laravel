@@ -151,8 +151,8 @@ body.dark td,hr{
     color: #e2e6e6 !important;
 }
 
-body.dark p, h2, label{
-    color: #e2e6e6 !important;
+body.dark label,p,h2{
+    color: #e2e6e6;
 }
 
 body.dark .bi{
