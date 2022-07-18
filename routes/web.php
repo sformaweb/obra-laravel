@@ -9,6 +9,11 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PersoasController;
 use App\Http\Controllers\EmpresasController;
 
+use App\Http\Controllers\OfertafsController;
+use App\Http\Controllers\OfertatsController;
+
+use App\Http\Controllers\EventController;
+
 /*
 | Web Routes
 |-----------------------------------------------------------------------------------------------
@@ -41,7 +46,7 @@ Route::post('/persoas/{id}',  [PersoasController::class, 'update'])->name('perso
 Route::get('/persoas/{id}/show',  [PersoasController::class, 'show'])->name('persoas.show');
 
 // ELIMINAR UN REGISTRO - NO TIENE VISTA
-Route::delete('/persoas/{id}' ,[PersoasController::class, 'destroy'])->name('persoas.destroy');
+Route::delete('/persoas/{id}', [PersoasController::class, 'destroy'])->name('persoas.destroy');
 
 
 // RUTAS DE EMPRESAS
@@ -61,5 +66,51 @@ Route::post('/empresas/{id}',  [EmpresasController::class, 'update'])->name('emp
 Route::get('/empresas/{id}/show',  [EmpresasController::class, 'show'])->name('empresas.show');
 
 // ELIMINAR UN REGISTRO - NO TIENE VISTA
-Route::delete('/empresas/{id}' ,[EmpresasController::class, 'destroy'])->name('empresas.destroy');
+Route::delete('/empresas/{id}', [EmpresasController::class, 'destroy'])->name('empresas.destroy');
 
+
+// RUTAS DE OFERTAFormación
+
+// INDEX + BUSQUEDA
+Route::get('/ofertafs/index', [OfertafsController::class, 'index'])->name('ofertafs.index');
+
+// CREAR NUEVA
+Route::get('/ofertafs/create',  [OfertafsController::class, 'create'])->name('ofertafs.create');
+Route::post('/ofertafs',  [OfertafsController::class, 'store'])->name('ofertafs.store');
+
+// EDITAR UN REGISTRO
+Route::get('/ofertafs/{id}/edit',  [OfertafsController::class, 'edit'])->name('ofertafs.edit');
+Route::post('/ofertafs/{id}',  [OfertafsController::class, 'update'])->name('ofertafs.update');
+
+// VER UN REGISTRO
+Route::get('/ofertafs/{id}/show',  [OfertafsController::class, 'show'])->name('ofertafs.show');
+
+// ELIMINAR UN REGISTRO - NO TIENE VISTA
+Route::delete('/ofertafs/{id}', [OfertafsController::class, 'destroy'])->name('ofertafs.destroy');
+
+
+// RUTAS DE OFERTATraballo
+
+// INDEX + BUSQUEDA
+Route::get('/ofertats/index', [OfertatsController::class, 'index'])->name('ofertats.index');
+
+// CREAR NUEVA
+Route::get('/ofertats/create',  [OfertatsController::class, 'create'])->name('ofertats.create');
+Route::post('/ofertats',  [OfertatsController::class, 'store'])->name('ofertats.store');
+
+// EDITAR UN REGISTRO
+Route::get('/ofertats/{id}/edit',  [OfertatsController::class, 'edit'])->name('ofertats.edit');
+Route::post('/ofertats/{id}',  [OfertatsController::class, 'update'])->name('ofertats.update');
+
+// VER UN REGISTRO
+Route::get('/ofertats/{id}/show',  [OfertatsController::class, 'show'])->name('ofertats.show');
+
+// ELIMINAR UN REGISTRO - NO TIENE VISTA
+Route::delete('/ofertats/{id}', [OfertatsController::class, 'destroy'])->name('ofertats.destroy');
+
+
+// AXENDA
+Route::get('calendar', [EventController::class, 'index'])->name('calendar.index');
+Route::post('calendar/create-event', [EventController::class, 'create'])->name('calendar.create');
+Route::patch('calendar/edit-event', [EventController::class, 'edit'])->name('calendar.edit');
+Route::delete('calendar/remove-event', [EventController::class, 'destroy'])->name('calendar.destroy');

@@ -17,10 +17,10 @@ class EmpresasController extends Controller
         $busqueda = trim($request->get('busqueda'));
 
         // $empresas = empresas::paginate(10);
-        $empresas = Empresas::where('nome', 'like', ''.$busqueda.'%')
-                            ->orWhere('telefono', 'like', ''.$busqueda.'%')
-                            ->orderBy('id', 'desc')
-                            ->paginate(10);
+        $empresas = Empresas::where('nome', 'like', '' . $busqueda . '%')
+            ->orWhere('telefono', 'like', '' . $busqueda . '%')
+            ->orderBy('id', 'desc')
+            ->paginate(10);
         return view('empresas.index', ['empresas' => $empresas, 'busqueda' => $busqueda]);
     }
 

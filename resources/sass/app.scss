@@ -148,6 +148,7 @@ h2 {
 
 .navbar {
   height: 5rem;
+  background-image: none;
 }
 
 // -----------------------------------------FIN HEADER LOGIN---------------------------------------------------------
@@ -166,6 +167,9 @@ h2 {
 .navbar-dark .navbar-toggler {
   border: 0;
   float: right;
+}
+.navbar-dark{
+    background-image: none;
 }
 // ----------------------------------------- PECHE MENÚ HAMBURGUESA--------------------------------------------------------
 

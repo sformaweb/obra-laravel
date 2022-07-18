@@ -26,7 +26,9 @@
                             aria-current="true">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" aria-current="true">Axenda</a>
+                        <a href="{{ route('calendar.index') }}"
+                        class="nav-link {{ request()->is('calendar') ? 'active btn btn-outline-light' : '' }}"
+                           aria-current="true">Axenda</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{ route('persoas.index') }}"
@@ -39,8 +41,21 @@
                             aria-current="true">Empresas</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" aria-current="true">Ofertas</a>
+                        <a href="{{ route('ofertafs.index') }}"
+                           class="nav-link {{ request()->is('ofertafs*') ? 'active btn btn-outline-light' : '' }}"
+                           aria-current="true">Formación</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="{{ route('ofertats.index') }}"
+                           class="nav-link {{ request()->is('ofertats*') ? 'active btn btn-outline-light' : '' }}"
+                           aria-current="true">Emprego</a>
+                    </li>
+
+                   {{-- <li class="nav-item">
+                        <a href="{{ route('ofertafs.index') }}"
+                           class="nav-link {{ request()->is('ofertafs*') ? 'active btn btn-outline-light' : '' }}"
+                           aria-current="true">Formación</a>
+                    </li> --}}
                     <li class="nav-item">
                         <a href="#" class="nav-link" aria-current="true">Consultas</a>
                     </li>
@@ -55,14 +70,14 @@
                     </li>
                 </ul>
 
-                {{-- Botón modo oscuro --}}
+                {{-- Botón modo oscuro
 
                 <button class="switch" id="switch">
                     <span><i class="material-icons luna ">brightness_2</i>
                         </i></span>
                     <span><i class="material-icons sol">brightness_5</i>
                         </i></i></span>
-                </button>
+                </button> --}}
 
 
 
@@ -83,7 +98,7 @@
                     </div>
                 </form>
                 {{-- lo más probable es que no funcione, hay que crear una función específica
-                en el HomeController pero no sé con qué parámetros --}}
+                en el HomeController pero no sé con qué parámetros ??? --}}
 
             </div>
         </div>
