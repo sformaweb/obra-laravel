@@ -12,8 +12,6 @@
 
 <div class="container">
     <div class="row m-3">
-        <h1>FullCalndar example</h1>
-        <hr>
         <div class="col-12">
             <div id='calendar'></div>
         </div>
@@ -22,7 +20,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
@@ -123,7 +121,7 @@
         });
     });
 </script>
-    </div>
+</div>
 
     {{-- FOOTER ESPECÍFICO DEL INDEX --}}
     <!-- Content Footer (Page footer) -->

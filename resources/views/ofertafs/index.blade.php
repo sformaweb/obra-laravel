@@ -9,7 +9,7 @@
     <div class="container mb-4">
         <nav class="navbar navbar-light my-4">
             <div class="container-fluid">
-                <h3 class="text-primary w-25"><b>OFERTAS FORMACIÓN</b></h3>
+                <h3 class="text-primary w-25"><b>OFERTAS FORMACION</b></h3>
 
 
                 <form class="d-flex" action="{{ route('ofertafs.index') }}" method="GET">
